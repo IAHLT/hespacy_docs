@@ -1,0 +1,58 @@
+site_name: IAHLT Hebrew Pipeline
+theme:
+  name: material
+  palette:
+    primary: indigo
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - toc.integrate
+    - toc.github
+    - toc.sections
+    - search.highlight
+    - search.suggest
+    - code-highlighting
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+  font:
+    size: 16
+markdown_extensions:
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
+
+copyright: Copyright &copy; 2024 <a href="https://www.iahlt.org/" target="_blank" rel="noopener">IAHLT</a>
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
+
+nav:
+  - Pipeline: index.md
+  - Access: access.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/IAHLT
+  generator: false
+
